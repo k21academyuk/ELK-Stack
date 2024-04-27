@@ -98,15 +98,15 @@ podAnnotations: {}
 # additionals labels
 labels: {}
 
-logstashJavaOpts: "-Xmx1g -Xms1g"
+logstashJavaOpts: "-Xmx2g -Xms2g"
 
 resources:
   requests:
     cpu: "100m"
     memory: "500Mi"
   limits:
-    cpu: "100m"
-    memory: "500Mi"
+    cpu: "1000m"
+    memory: "2Gi"
 
 volumeClaimTemplate:
   accessModes: ["ReadWriteOnce"]
